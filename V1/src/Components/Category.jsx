@@ -33,7 +33,7 @@ function Category() {
               alignItems: "center",
             }}
           >
-            <div className="circle">
+            <div className="circle" onClick={toggleDrawer(true)}>
               <Avatar
                 alt="Birk"
                 src="https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp"
@@ -54,7 +54,7 @@ function Category() {
               alignItems: "center",
             }}
           >
-            <div className="circle">
+            <div className="circle" onClick={toggleDrawer(true)}>
               <Avatar
                 alt="Slippers"
                 src="https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507799781.jpg"
@@ -70,7 +70,7 @@ function Category() {
               alignItems: "center",
             }}
           >
-            <div className="circle">
+            <div className="circle" onClick={toggleDrawer(true)}>
               <Avatar
                 alt="Birk"
                 src="https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp"
