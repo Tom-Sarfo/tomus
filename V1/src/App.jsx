@@ -11,12 +11,9 @@ function App() {
       <Navbar />
       <Banner />
       <Category />
-      {/* <Stack
-        direction=""
-        gap={2}
-        sx={{ padding: "0.5rem", marginTop: "2rem" }} */}
-      {/* > */}
+      
       <Box
+      
         sx={{
           display: "flex",
           flexWrap: "wrap",
@@ -24,6 +21,7 @@ function App() {
           gap: "4px",
           padding: "10px",
         }}
+        
       >
         <ProductCard productName="Nsaa" price="$500.00" />
         <ProductCard productName="Nsaa" price="$500.00" />
