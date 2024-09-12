@@ -23,7 +23,7 @@ function Navbar() {
         </p>
         <LogoIcon style={{ width: "60px", height: "60px" }} />
         <StorefrontIcon
-          sx={{ color: "#000000", fontSize: "30px", paddingRight: "0.1rem" }}
+          sx={{ color: "#8531AB", fontSize: "30px", paddingRight: "0.1rem" }}
         />
       </Stack>
     </Box>

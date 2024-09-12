@@ -5,10 +5,34 @@ import { useState } from "react";
 import Stories from "react-insta-stories";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { Resize, thumbnail } from "@cloudinary/url-gen/actions/resize";
+// import { transformationStringFromObject } from "@cloudinary/url-gen";
+// Import cloudinary plugins
+import {
+  AdvancedImage,
+  lazyload,
+  accessibility,
+  responsive,
+  placeholder,
+} from "@cloudinary/react";
 import "../App.css";
+import { focusOn } from "@cloudinary/url-gen/qualifiers/autoFocus";
+import { face } from "@cloudinary/url-gen/qualifiers/focusOn";
+import { max } from "@cloudinary/url-gen/actions/roundCorners";
+import { format } from "@cloudinary/url-gen/actions/delivery";
 
 function Category() {
   const [open, setOpen] = useState(false);
+
+  // Create and configure your Cloudinary instance.
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "dki2r1gnf",
+    },
+  });
+
+  const myImage = cld.image('sf7eqmuj9uspigykb8fd');
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -36,7 +60,7 @@ function Category() {
             <div className="circle" onClick={toggleDrawer(true)}>
               <Avatar
                 alt="Birk"
-                src="https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp"
+                src={"https://res.cloudinary.com/dki2r1gnf/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,q_auto,f_auto/v1724763980/sf7eqmuj9uspigykb8fd.jpg"}
                 sx={{
                   width: 76,
                   height: 76,
@@ -44,6 +68,13 @@ function Category() {
                   inset: "4px 4px 4px 4px",
                 }}
               />
+              {/* <AdvancedImage cldImg={cld.image('sf7eqmuj9uspigykb8fd')} /> */}
+              {/* <AdvancedImage
+                cldImg={cld
+                  .image("sf7eqmuj9uspigykb8fd")
+                  .resize(thumbnail().width(76).height(76)).roundCorners(max())}
+              /> */}
+
             </div>
             <p>Birks</p>
           </div>
@@ -88,7 +119,20 @@ function Category() {
           width={432}
           height={768}
         />
-        <Button onClick={toggleDrawer(false)}>Close story</Button>
+        <center>
+          <Button
+            variant="contained"
+            sx={{
+              width: "200px",
+              textTransform: "capitalize",
+              margin: "10px",
+              backgroundColor: "#8531AB",
+            }}
+            onClick={toggleDrawer(false)}
+          >
+            Close story
+          </Button>
+        </center>
       </Drawer>
     </Box>
   );
