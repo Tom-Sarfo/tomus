@@ -5,34 +5,9 @@ import { useState } from "react";
 import Stories from "react-insta-stories";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-import { Cloudinary } from "@cloudinary/url-gen";
-import { Resize, thumbnail } from "@cloudinary/url-gen/actions/resize";
-// import { transformationStringFromObject } from "@cloudinary/url-gen";
-// Import cloudinary plugins
-import {
-  AdvancedImage,
-  lazyload,
-  accessibility,
-  responsive,
-  placeholder,
-} from "@cloudinary/react";
-import "../App.css";
-import { focusOn } from "@cloudinary/url-gen/qualifiers/autoFocus";
-import { face } from "@cloudinary/url-gen/qualifiers/focusOn";
-import { max } from "@cloudinary/url-gen/actions/roundCorners";
-import { format } from "@cloudinary/url-gen/actions/delivery";
 
 function Category() {
   const [open, setOpen] = useState(false);
-
-  // Create and configure your Cloudinary instance.
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "dki2r1gnf",
-    },
-  });
-
-  const myImage = cld.image('sf7eqmuj9uspigykb8fd');
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -45,10 +20,9 @@ function Category() {
   ];
 
   return (
-    <Box>
+    <Box className="circle-category">
       <p style={{ padding: "0.5rem" }}>Shop by category</p>
       <div style={{}}>
-        {/* <Button onClick={toggleDrawer(true)}>view category</Button> */}
         <Stack direction="row" spacing={3} sx={{ justifyContent: "center" }}>
           <div
             style={{
@@ -60,7 +34,9 @@ function Category() {
             <div className="circle" onClick={toggleDrawer(true)}>
               <Avatar
                 alt="Birk"
-                src={"https://res.cloudinary.com/dki2r1gnf/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,q_auto,f_auto/v1724763980/sf7eqmuj9uspigykb8fd.jpg"}
+                src={
+                  "https://res.cloudinary.com/dki2r1gnf/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,q_auto,f_auto/v1724763980/sf7eqmuj9uspigykb8fd.jpg"
+                }
                 sx={{
                   width: 76,
                   height: 76,
@@ -74,7 +50,6 @@ function Category() {
                   .image("sf7eqmuj9uspigykb8fd")
                   .resize(thumbnail().width(76).height(76)).roundCorners(max())}
               /> */}
-
             </div>
             <p>Birks</p>
           </div>
@@ -112,12 +87,18 @@ function Category() {
           </div>
         </Stack>
       </div>
-      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+      <Drawer
+        anchor="right"
+        open={open}
+        onClose={toggleDrawer(false)}
+        sx={{ height: "100vh" }}
+      >
         <Stories
           stories={stories}
           defaultInterval={1500}
           width={432}
           height={768}
+          storyStyles={{ position: "relative" }}
         />
         <center>
           <Button
@@ -127,6 +108,8 @@ function Category() {
               textTransform: "capitalize",
               margin: "10px",
               backgroundColor: "#8531AB",
+              // marginTop: '-50px',
+              position: "absolute",
             }}
             onClick={toggleDrawer(false)}
           >

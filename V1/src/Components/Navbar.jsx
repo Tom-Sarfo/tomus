@@ -1,8 +1,11 @@
 import Box from "@mui/material/Box";
-import StorefrontIcon from "@mui/icons-material/Storefront";
 import LogoIcon from "../assets/logoIcon.svg?react";
 import Stack from "@mui/material/Stack";
+import { Link } from "@mui/material";
+import useScreenWidth from "../hooks/useScreenWidth";
 function Navbar() {
+  const screenWidth = useScreenWidth();
+
   return (
     <Box
       sx={{
@@ -21,10 +24,20 @@ function Navbar() {
         >
           Tomus
         </p>
-        <LogoIcon style={{ width: "60px", height: "60px" }} />
-        <StorefrontIcon
-          sx={{ color: "#8531AB", fontSize: "30px", paddingRight: "0.1rem" }}
+        <LogoIcon
+          style={{
+            width: "60px",
+            height: "60px",
+            marginRight: screenWidth < 420 && "70px",
+          }}
         />
+        <span>
+          {screenWidth > 1025 && (
+            <Link sx={{ textDecoration: "none", color: "#8531ab" }}>
+              About us
+            </Link>
+          )}
+        </span>
       </Stack>
     </Box>
   );

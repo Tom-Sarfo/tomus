@@ -21,3 +21,16 @@ export const bannerMediaObject = {
   imgDesc: "African clogs",
   style: { width: "100%", height: "auto" },
 };
+
+
+export const squareCatMediaObject = {
+  mediaSet: [
+    {
+      media: "(min-width: 1024px)",
+      srcSet: "/Mobile-small-header.jpg",
+    },
+  ],
+  img: "/Mobile-small-header.jpg",
+  imgDesc: "category",
+  style: { width: "100%", height: "auto", borderRadius: '5px' },
+};

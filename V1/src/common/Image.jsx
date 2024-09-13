@@ -30,13 +30,14 @@ import PropTypes from "prop-types";
 function Image({ mediaObject }) {
   return (
     <picture>
-      {mediaObject.mediaSet.map((source, index) => (
+      {mediaObject.mediaSet?.map((source, index) => (
         <source key={index} media={source.media} srcSet={source.srcSet} />
       ))}
       <img
         src={mediaObject.img}
         alt={mediaObject.imgDesc}
         style={mediaObject.style}
+        loading="lazy"
       />
     </picture>
   );
