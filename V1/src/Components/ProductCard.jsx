@@ -1,11 +1,14 @@
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import "../App.css";
+import Image from "../common/Image";
 
-function ProductCard({ imgUrl, productName, price, instock, newArrival }) {
+function ProductCard({ mediaObject, productName, price, instock, newArrival }) {
   return (
     <Box sx={{ marginBottom: "15px" }} className="product-card-container">
-      <Box className="product-card">{/* <Image /> */}</Box>
+      <Box className="product-card">
+        {mediaObject && <Image mediaObject={mediaObject} />}
+      </Box>
       <div className="product-caption">
         <p style={{ marginBlockStart: "0px", fontWeight: "bold" }}>
           {productName}
@@ -17,7 +20,7 @@ function ProductCard({ imgUrl, productName, price, instock, newArrival }) {
 }
 
 ProductCard.propTypes = {
-  imgUrl: PropTypes.string,
+  mediaObject: PropTypes.object,
   productName: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   instock: PropTypes.bool,

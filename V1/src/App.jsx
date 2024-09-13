@@ -7,6 +7,7 @@ import ProductCard from "./Components/ProductCard";
 import LargeScreenCategory from "./Components/LargeScreenCategory";
 import useScreenWidth from "./hooks/useScreenWidth";
 import HeroText from "./Components/HeroText";
+import { productMediaObject } from "./MediaObjects";
 
 function App() {
   const screenWidth = useScreenWidth();
@@ -27,10 +28,14 @@ function App() {
           padding: "10px",
         }}
       >
-        <ProductCard productName="Nsaa" price="$500.00" />
-        <ProductCard productName="Nsaa" price="$500.00" />
-        <ProductCard productName="Nsaa" price="$500.00" />
-        <ProductCard productName="Nsaa" price="$500.00" />
+        {productMediaObject.map((mediaObject, index) => (
+          <ProductCard
+            key={index}
+            productName="Nsaa"
+            price="$500.00"
+            mediaObject={mediaObject}
+          />
+        ))}
       </Box>
     </>
   );

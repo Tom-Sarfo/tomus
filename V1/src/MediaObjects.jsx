@@ -22,7 +22,6 @@ export const bannerMediaObject = {
   style: { width: "100%", height: "auto" },
 };
 
-
 export const squareCatMediaObject = {
   mediaSet: [
     {
@@ -32,5 +31,52 @@ export const squareCatMediaObject = {
   ],
   img: "/Mobile-small-header.jpg",
   imgDesc: "category",
-  style: { width: "100%", height: "auto", borderRadius: '5px' },
+  style: { width: "100%", height: "auto", borderRadius: "5px" },
 };
+
+export const productMediaObject = [
+  {
+    mediaSet: [
+      {
+        media: "(min-width: 1024px)",
+        srcSet: "/Ayode.jpg",
+      },
+    ],
+    img: "/Ayode.jpg",
+    imgDesc: "category",
+    style: { width: "100%" },
+  },
+  {
+    mediaSet: [
+      {
+        media: "(min-width: 1024px)",
+        srcSet: "/Ayode.jpg",
+      },
+    ],
+    img: "/Ayode.jpg",
+    imgDesc: "category",
+    style: { width: "100%" },
+  },
+  {
+    mediaSet: [
+      {
+        media: "(min-width: 1024px)",
+        srcSet: "/Ayode.jpg",
+      },
+    ],
+    img: "/Ayode.jpg",
+    imgDesc: "category",
+    style: { width: "100%" },
+  },
+  {
+    mediaSet: [
+      {
+        media: "(min-width: 1024px)",
+        srcSet: "/Ayode.jpg",
+      },
+    ],
+    img: "/Ayode.jpg",
+    imgDesc: "category",
+    style: { width: "100%" },
+  },
+];

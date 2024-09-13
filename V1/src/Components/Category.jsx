@@ -44,12 +44,6 @@ function Category() {
                   inset: "4px 4px 4px 4px",
                 }}
               />
-              {/* <AdvancedImage cldImg={cld.image('sf7eqmuj9uspigykb8fd')} /> */}
-              {/* <AdvancedImage
-                cldImg={cld
-                  .image("sf7eqmuj9uspigykb8fd")
-                  .resize(thumbnail().width(76).height(76)).roundCorners(max())}
-              /> */}
             </div>
             <p>Birks</p>
           </div>
@@ -108,7 +102,6 @@ function Category() {
               textTransform: "capitalize",
               margin: "10px",
               backgroundColor: "#8531AB",
-              // marginTop: '-50px',
               position: "absolute",
             }}
             onClick={toggleDrawer(false)}

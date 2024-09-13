@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import LogoIcon from "../assets/logoIcon.svg?react";
 import Stack from "@mui/material/Stack";
-import { Link } from "@mui/material";
+import Link from "@mui/material/Link";
 import useScreenWidth from "../hooks/useScreenWidth";
 function Navbar() {
   const screenWidth = useScreenWidth();
