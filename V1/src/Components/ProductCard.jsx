@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "../App.css";
 import Image from "../common/Image";
 
-function ProductCard({ mediaObject, productName, price, instock, newArrival }) {
+function ProductCard({ mediaObject, instock, newArrival }) {
   return (
     <Box sx={{ marginBottom: "15px" }} className="product-card-container">
       <Box className="product-card">
@@ -11,9 +11,9 @@ function ProductCard({ mediaObject, productName, price, instock, newArrival }) {
       </Box>
       <div className="product-caption">
         <p style={{ marginBlockStart: "0px", fontWeight: "bold" }}>
-          {productName}
+          {mediaObject.imageName}
         </p>
-        <p>{price}</p>
+        <p>${mediaObject.price}</p>
       </div>
     </Box>
   );
@@ -21,8 +21,6 @@ function ProductCard({ mediaObject, productName, price, instock, newArrival }) {
 
 ProductCard.propTypes = {
   mediaObject: PropTypes.object,
-  productName: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
   instock: PropTypes.bool,
   newArrival: PropTypes.bool,
 };

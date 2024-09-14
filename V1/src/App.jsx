@@ -19,6 +19,15 @@ function App() {
       <HeroText />
       {screenWidth > 1024 ? <LargeScreenCategory /> : <Category />}
 
+      <h2
+        style={{
+          paddingLeft: "1rem",
+          fontWeight: "bold",
+          textAlign: screenWidth > 1024 && "center",
+        }}
+      >
+        Hot picks
+      </h2>
       <Box
         sx={{
           display: "flex",

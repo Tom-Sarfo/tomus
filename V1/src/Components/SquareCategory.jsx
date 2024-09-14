@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box";
 import Image from "../common/Image";
-import { squareCatMediaObject } from "../MediaObjects";
+import PropTypes from 'prop-types';
 
-function SquareCategory() {
+function SquareCategory({mediaObject}) {
   return (
     <Box
       sx={{
@@ -13,10 +13,14 @@ function SquareCategory() {
         borderRadius: "5px",
       }}
     >
-      <Image mediaObject={squareCatMediaObject} style={{borderRadius: '20px'}} />
-      <Box sx={{backgroundColor: '#ffffff', height: '100%', padding: '0.5rem', textAlign: 'left'}}>Birks</Box>
+      <Image mediaObject={mediaObject} style={{borderRadius: '20px'}} />
+      <Box sx={{backgroundColor: '#ffffff', height: '100%', padding: '0.5rem', textAlign: 'left'}}>{mediaObject.imageName}</Box>
     </Box>
   );
 }
+
+SquareCategory.propTypes = {
+  mediaObject: PropTypes.object,
+};
 
 export default SquareCategory;

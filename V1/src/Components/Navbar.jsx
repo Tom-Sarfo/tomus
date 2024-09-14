@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import LogoIcon from "../assets/logoIcon.svg?react";
 import Stack from "@mui/material/Stack";
-import Link from "@mui/material/Link";
+import { Link } from "@mui/material";
 import useScreenWidth from "../hooks/useScreenWidth";
 function Navbar() {
   const screenWidth = useScreenWidth();
@@ -31,13 +31,13 @@ function Navbar() {
             marginRight: screenWidth < 420 && "70px",
           }}
         />
-        <span>
-          {screenWidth > 1025 && (
+        {screenWidth > 1025 && (
+          <span>
             <Link sx={{ textDecoration: "none", color: "#8531ab" }}>
               About us
             </Link>
-          )}
-        </span>
+          </span>
+        )}
       </Stack>
     </Box>
   );

@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import SquareCategory from "./SquareCategory";
+import { squareCatMediaObject } from "../MediaObjects";
 
 function LargeScreenCategory() {
   return (
@@ -19,9 +20,9 @@ function LargeScreenCategory() {
           justifyContent: "center",
         }}
       >
-        <SquareCategory />
-        <SquareCategory />
-        <SquareCategory />
+        {squareCatMediaObject.map((mediaObject, index) => (
+          <SquareCategory key={index} mediaObject={mediaObject} />
+        ))}
       </div>
     </Box>
   );
