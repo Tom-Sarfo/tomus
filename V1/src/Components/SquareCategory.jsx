@@ -23,7 +23,7 @@ function SquareCategory({ mediaObject }) {
           textAlign: "left",
         }}
       >
-        {mediaObject.imageName}
+        {mediaObject.imageName} 
       </Box>
     </Box>
   );
