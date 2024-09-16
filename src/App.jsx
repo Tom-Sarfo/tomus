@@ -1,20 +1,21 @@
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 import "./App.css";
-import Banner from "./Components/Banner";
-import Category from "./Components/Category";
-import Navbar from "./Components/Navbar";
-import ProductCard from "./Components/ProductCard";
-import LargeScreenCategory from "./Components/LargeScreenCategory";
-import useScreenWidth from "./hooks/useScreenWidth";
-import HeroText from "./Components/HeroText";
-import { productMediaObject } from "./MediaObjects";
+// import Banner from "./Components/Banner";
+// import Category from "./Components/Category";
+// import Navbar from "./Components/Navbar";
+// import ProductCard from "./Components/ProductCard";
+// import LargeScreenCategory from "./Components/LargeScreenCategory";
+// import useScreenWidth from "./hooks/useScreenWidth";
+// import HeroText from "./Components/HeroText";
+// import { productMediaObject } from "./MediaObjects";
+import ComingSoon from "./ComingSoon";
 
 function App() {
-  const screenWidth = useScreenWidth();
+  // const screenWidth = useScreenWidth();
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Banner />
       <HeroText />
       {screenWidth > 1024 ? <LargeScreenCategory /> : <Category />}
@@ -45,7 +46,8 @@ function App() {
             mediaObject={mediaObject}
           />
         ))}
-      </Box>
+      </Box> */}
+      <ComingSoon />
     </>
   );
 }
