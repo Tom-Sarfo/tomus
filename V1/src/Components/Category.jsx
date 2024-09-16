@@ -1,114 +1,72 @@
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { useState } from "react";
 import Stories from "react-insta-stories";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import { storiesArray } from "../Stories";
 
 function Category() {
   const [open, setOpen] = useState(false);
+  const [storyIndex, setStoryIndex] = useState(null);
 
-  const toggleDrawer = (newOpen) => () => {
+  const handleStoryClick = (newOpen, index) => {
+    setStoryIndex(index);
     setOpen(newOpen);
   };
 
-  const stories = [
-    "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507785974.webp",
-    "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507799781.jpg",
-    "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp",
-  ];
+  const stories = storiesArray.map((story) => story.story);
+  const filteredStories = stories.filter(
+    (story, index) => index === storyIndex
+  );
 
   return (
     <Box className="circle-category">
       <p style={{ padding: "0.5rem 0.5rem 0.5rem 2rem" }}>Shop by category</p>
       <div style={{}}>
         <Stack direction="row" spacing={3} sx={{ justifyContent: "center" }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <div className="circle" onClick={toggleDrawer(true)}>
-              <Avatar
-                alt="Birk"
-                src={
-                  "https://res.cloudinary.com/dki2r1gnf/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,q_auto,f_auto/v1724763980/sf7eqmuj9uspigykb8fd.jpg"
-                }
-                sx={{
-                  width: 76,
-                  height: 76,
-                  placeItems: "center",
-                  inset: "4px 4px 4px 4px",
-                }}
-              />
+          {storiesArray.map((story, index) => (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+              key={index}
+            >
+              <div
+                className="circle"
+                onClick={() => handleStoryClick(true, index)}
+              >
+                <Avatar
+                  alt="Birk"
+                  src={story.storyCover}
+                  sx={{
+                    width: 76,
+                    height: 76,
+                    placeItems: "center",
+                    inset: "4px 4px 4px 4px",
+                  }}
+                />
+              </div>
+              <p>Birks</p>
             </div>
-            <p>Birks</p>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <div className="circle" onClick={toggleDrawer(true)}>
-              <Avatar
-                alt="Slippers"
-                src="https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507799781.jpg"
-                sx={{ width: 76, height: 76, inset: "4px 4px 4px 4px" }}
-              />
-            </div>
-            <p>Beads</p>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <div className="circle" onClick={toggleDrawer(true)}>
-              <Avatar
-                alt="Birk"
-                src="https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp"
-                sx={{ width: 76, height: 76, inset: "4px 4px 4px 4px" }}
-              />
-            </div>
-            <p>Slippers</p>
-          </div>
+          ))}
         </Stack>
       </div>
       <Drawer
         anchor="right"
         open={open}
-        onClose={toggleDrawer(false)}
-        sx={{ height: "100vh" }}
+        // onClose={toggleDrawer(false)}
+        sx={{ height: "100vh", width: "100%" }}
       >
         <Stories
-          stories={stories}
-          defaultInterval={1500}
-          width={432}
-          height={768}
-          storyStyles={{ position: "relative" }}
+          stories={filteredStories.flat()}
+          defaultInterval={3000}
+          width={"100%"}
+          height="100vh"
+          onAllStoriesEnd={() => setOpen(false)}
         />
-        <center>
-          <Button
-            variant="contained"
-            sx={{
-              width: "200px",
-              textTransform: "capitalize",
-              margin: "10px",
-              backgroundColor: "#8531AB",
-              position: "absolute",
-            }}
-            onClick={toggleDrawer(false)}
-          >
-            Close story
-          </Button>
-        </center>
       </Drawer>
     </Box>
   );
