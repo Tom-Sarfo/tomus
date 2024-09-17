@@ -28,10 +28,10 @@ export const squareCatMediaObject = [
       {
         media: "(min-width: 1024px)",
         srcSet:
-          "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Square%20category/v1724763980/sf7eqmuj9uspigykb8fd.jpg",
+          "https://res.cloudinary.com/dki2r1gnf/image/upload/t_square%20category/v1726568378/sf7eqmuj9uspigykb8fd_Square_category_avqtge_1_1_oltw20.webp",
       },
     ],
-    img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Square%20category/v1724763980/sf7eqmuj9uspigykb8fd.jpg",
+    img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_square%20category/v1726568378/sf7eqmuj9uspigykb8fd_Square_category_avqtge_1_1_oltw20.webp",
     imageName: 'Birks (Cork sole slippers)',
     Price: '250',
     imgDesc: "Explore birk slippers",
@@ -42,10 +42,10 @@ export const squareCatMediaObject = [
       {
         media: "(min-width: 1024px)",
         srcSet:
-          "https://res.cloudinary.com/dki2r1gnf/image/upload/c_crop,w_1950,h_1463,ar_4:3,g_auto/v1726298301/TOMUS-46_2_xxef2z.webp",
+          "https://res.cloudinary.com/dki2r1gnf/image/upload/t_sqaure%20category%20for%20big%20img/v1726571477/3355500594_pysrwx.webp",
       },
     ],
-    img: "https://res.cloudinary.com/dki2r1gnf/image/upload/c_crop,w_1950,h_1463,ar_4:3,g_auto/v1726298301/TOMUS-46_2_xxef2z.webp",
+    img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_sqaure%20category%20for%20big%20img/v1726571477/3355500594_pysrwx.webp",
     imageName: 'Beads',
     Price: '300',
     imgDesc: "Explore Colorful bead slippers",
@@ -56,10 +56,10 @@ export const squareCatMediaObject = [
       {
         media: "(min-width: 1024px)",
         srcSet:
-          "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Square%20category/v1726298903/photo_2024-09-11_13-24-49_sddkli.jpg",
+          "https://res.cloudinary.com/dki2r1gnf/image/upload/c_fill,w_711,h_533,ar_4:3,g_auto/v1726298903/photo_2024-09-11_13-24-49_sddkli.jpg",
       },
     ],
-    img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Square%20category/v1726298903/photo_2024-09-11_13-24-49_sddkli.jpg",
+    img: "https://res.cloudinary.com/dki2r1gnf/image/upload/c_fill,w_711,h_533,ar_4:3,g_auto/v1726298903/photo_2024-09-11_13-24-49_sddkli.jpg",
     imageName: 'Kaftan Slippers',
     Price: '450',
     imgDesc: "Explore pure leather Kaftan slippers",
