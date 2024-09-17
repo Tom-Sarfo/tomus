@@ -29,7 +29,7 @@ function Navbar() {
         >
           <p
             style={{
-              color: "#8531AB",
+              color: "#591a76",
               fontWeight: "bold",
               fontSize: "26px",
               paddingLeft: "0.5rem",
@@ -54,7 +54,7 @@ function Navbar() {
           )}
           {screenWidth > 1025 && (
             <span>
-              <Link sx={{ textDecoration: "none", color: "#8531ab" }}>
+              <Link sx={{ textDecoration: "none", color: "#591a76", fontWeight: 'bold' }}>
                 About us
               </Link>
             </span>

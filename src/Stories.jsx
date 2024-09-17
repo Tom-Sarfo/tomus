@@ -138,6 +138,7 @@ export const storiesArray = [
         duration: 5000,
       },
     ],
+    categoryName: 'Birks',
     storyCover:
       "https://res.cloudinary.com/dki2r1gnf/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,q_auto,f_auto/v1724763980/sf7eqmuj9uspigykb8fd.jpg",
   },
@@ -209,6 +210,7 @@ export const storiesArray = [
         duration: 5000,
       },
     ],
+    categoryName: 'Beads',
     storyCover:
       "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507799781.jpg",
   },
@@ -280,6 +282,7 @@ export const storiesArray = [
         duration: 5000,
       },
     ],
+    categoryName: 'Kaftan Slippers',
     storyCover:
       "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp",
   },

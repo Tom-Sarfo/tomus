@@ -49,7 +49,7 @@ function Category() {
                   }}
                 />
               </div>
-              <p>Birks</p>
+              <p>{story.categoryName}</p>
             </div>
           ))}
         </Stack>
