@@ -56,8 +56,8 @@ function App() {
             textTransform: "capitalize",
             "&:hover": { backgroundColor: "#8531ab" },
             "&:focus": { outline: "none" },
-
           }}
+          href="https://tomuswear.company.site/products/"
           onClick={() => {}}
         >
           View more

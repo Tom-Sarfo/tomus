@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import "../App.css";
 import PropTypes from "prop-types";
 
@@ -10,19 +11,27 @@ const FloatingButton = ({
   bottom,
 }) => {
   return (
-    <button
+    <Button
+      variant="contained"
+      href="https://tomuswear.company.site/products/"
       className="floating-button"
       onClick={onClick}
-      style={{
+      sx={{
         top: top,
         right: right,
         left: left,
         bottom: bottom,
-        position: 'fixed'
+        position: "fixed",
+        backgroundColor: "#591a76",
+        textTransform: "capitalize",
+        color: "#ffffff",
+        "&:hover": {
+          color: "#ffffff",
+        },
       }}
     >
       {buttonText}
-    </button>
+    </Button>
   );
 };
 

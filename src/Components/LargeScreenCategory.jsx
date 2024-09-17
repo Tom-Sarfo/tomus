@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import SquareCategory from "./SquareCategory";
 import { squareCatMediaObject } from "../MediaObjects";
+import "../App.css"
 
 function LargeScreenCategory() {
   return (
@@ -21,7 +22,13 @@ function LargeScreenCategory() {
         }}
       >
         {squareCatMediaObject.map((mediaObject, index) => (
-          <SquareCategory key={index} mediaObject={mediaObject} />
+          <a
+            className="product-link"
+            href="https://tomuswear.company.site/products/"
+            key={index}
+          >
+            <SquareCategory mediaObject={mediaObject} />
+          </a>
         ))}
       </div>
     </Box>

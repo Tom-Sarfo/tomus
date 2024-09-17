@@ -2,9 +2,7 @@ import { Button, Stack } from "@mui/material";
 import { WithSeeMore } from "react-insta-stories";
 import Ayode from "../public/Ayode.jpg";
 
-
 export const storiesArray = [
-  
   {
     story: [
       {
@@ -60,10 +58,14 @@ export const storiesArray = [
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor: "#8531ab",
+                  backgroundColor: "#591a76",
                   textTransform: "capitalize",
+                  color: "#ffffff",
+                  "&:hover": {
+                    color: "#ffffff",
+                  },
                 }}
-                onClick={() => {}}
+                href="https://tomuswear.company.site/products/"
               >
                 View details
               </Button>
@@ -125,10 +127,14 @@ export const storiesArray = [
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor: "#8531ab",
+                  backgroundColor: "#591a76",
                   textTransform: "capitalize",
+                  color: "#ffffff",
+                  "&:hover": {
+                    color: "#ffffff",
+                  },
                 }}
-                onClick={() => {}}
+                href="https://tomuswear.company.site/products/"
               >
                 View details
               </Button>
@@ -138,7 +144,7 @@ export const storiesArray = [
         duration: 5000,
       },
     ],
-    categoryName: 'Birks',
+    categoryName: "Birks",
     storyCover:
       "https://res.cloudinary.com/dki2r1gnf/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,q_auto,f_auto/v1724763980/sf7eqmuj9uspigykb8fd.jpg",
   },
@@ -197,10 +203,14 @@ export const storiesArray = [
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor: "#8531ab",
+                  backgroundColor: "#591a76",
                   textTransform: "capitalize",
+                  color: "#ffffff",
+                  "&:hover": {
+                    color: "#ffffff",
+                  },
                 }}
-                onClick={() => {}}
+                href="https://tomuswear.company.site/products/"
               >
                 View details
               </Button>
@@ -210,7 +220,7 @@ export const storiesArray = [
         duration: 5000,
       },
     ],
-    categoryName: 'Beads',
+    categoryName: "Beads",
     storyCover:
       "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507799781.jpg",
   },
@@ -269,10 +279,14 @@ export const storiesArray = [
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor: "#8531ab",
+                  backgroundColor: "#591a76",
                   textTransform: "capitalize",
+                  color: "#ffffff",
+                  "&:hover": {
+                    color: "#ffffff",
+                  },
                 }}
-                onClick={() => {}}
+                href="https://tomuswear.company.site/products/"
               >
                 View details
               </Button>
@@ -282,13 +296,11 @@ export const storiesArray = [
         duration: 5000,
       },
     ],
-    categoryName: 'Kaftan Slippers',
+    categoryName: "Kaftan Slippers",
     storyCover:
       "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp",
   },
 ];
-
-
 
 const contentStyle = {
   // background: "#d583fb",

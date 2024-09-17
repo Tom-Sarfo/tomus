@@ -1,13 +1,19 @@
 import "../App.css";
 import PropTypes from "prop-types";
-const HeroText = ({ text = "African - the embodiment of craft" }) => {
+const HeroText = ({
+  text1 = "African ",
+  text2 = " the embodiment of craft",
+}) => {
   return (
     <div className="hero-text">
-      <h1>{text}</h1>
+      <h1>
+        <b style={{ color: "#591a76" }}>{text1}</b>-{text2}
+      </h1>
     </div>
   );
 };
 HeroText.propTypes = {
-  text: PropTypes.string,
+  text1: PropTypes.string,
+  text2: PropTypes.string,
 };
 export default HeroText;

@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import { Link } from "@mui/material";
 import "../App.css";
 import useScreenWidth from "../hooks/useScreenWidth";
-import TomusIcon from "../../public/tomus-icon.png";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const screenWidth = useScreenWidth();
@@ -35,7 +35,9 @@ function Navbar() {
               paddingLeft: "0.5rem",
             }}
           >
-            Tomus
+            <NavLink className="link" to="/tomus">
+              Tomus
+            </NavLink>
           </p>
           {screenWidth < 420 ? (
             <img
@@ -44,17 +46,25 @@ function Navbar() {
               style={{ height: "60px", width: "60px" }}
             />
           ) : (
-            <LogoIcon
-              style={{
-                width: "60px",
-                height: "60px",
-                marginRight: screenWidth < 420 && "150px",
-              }}
-            />
+            <NavLink to="/tomus">
+              <LogoIcon
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  marginRight: screenWidth < 420 && "150px",
+                }}
+              />
+            </NavLink>
           )}
           {screenWidth > 1025 && (
             <span>
-              <Link sx={{ textDecoration: "none", color: "#591a76", fontWeight: 'bold' }}>
+              <Link
+                sx={{
+                  textDecoration: "none",
+                  color: "#591a76",
+                  fontWeight: "bold",
+                }}
+              >
                 About us
               </Link>
             </span>
