@@ -8,6 +8,7 @@ function Banner() {
     <Box
       sx={{
         width: "100%",
+        marginTop: '50px'
       }}
     >
       <Image mediaObject={bannerMediaObject} />

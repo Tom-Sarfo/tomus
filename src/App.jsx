@@ -8,6 +8,7 @@ import LargeScreenCategory from "./Components/LargeScreenCategory";
 import useScreenWidth from "./hooks/useScreenWidth";
 import HeroText from "./Components/HeroText";
 import { productMediaObject } from "./MediaObjects";
+import { Button } from "@mui/material";
 // import ComingSoon from "./ComingSoon";
 
 function App() {
@@ -47,6 +48,21 @@ function App() {
           />
         ))}
       </Box>
+      <center style={{ padding: "1rem" }}>
+        <Button
+          variant="contained"
+          sx={{
+            backgroundColor: "#591a76",
+            textTransform: "capitalize",
+            "&:hover": { backgroundColor: "#8531ab" },
+            "&:focus": { outline: "none" },
+
+          }}
+          onClick={() => {}}
+        >
+          View more
+        </Button>
+      </center>
       {/* <ComingSoon /> */}
     </>
   );

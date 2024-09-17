@@ -18,6 +18,7 @@ const FloatingButton = ({
         right: right,
         left: left,
         bottom: bottom,
+        position: 'fixed'
       }}
     >
       {buttonText}
