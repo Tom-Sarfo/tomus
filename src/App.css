@@ -82,6 +82,13 @@
   }
 }
 
+@media (max-width: 380px) {
+  .hero-text {
+    font-size: 0.5rem; /* Adjust font size for smaller screens */
+    top: 18%;
+  }
+}
+
 .product-caption {
   height: 70px;
   padding: 0.5rem;
