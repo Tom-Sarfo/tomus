@@ -2,15 +2,15 @@ export const bannerMediaObject = {
   mediaSet: [
     {
       media: "(max-width: 320px)",
-      srcSet: "/Mobile-small-header.jpg 320w",
+      srcSet: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Mobile-header-image/v1726061945/African-black-landscape-banner_ivpzvs.jpg 320w",
     },
     {
       media: "(max-width: 430px)",
-      srcSet: "/Mobile-header.jpg 430w",
+      srcSet: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Mobile-header-image/v1726061945/African-black-landscape-banner_ivpzvs.jpg 430w",
     },
     {
       media: "(max-width: 640px)",
-      srcSet: "/tablet-mini.jpg 640w",
+      srcSet: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Mobile-header-image/v1726061945/African-black-landscape-banner_ivpzvs.jpg 640w",
     },
     {
       media: "(max-width: 1024px)",
