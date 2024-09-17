@@ -2,10 +2,26 @@ import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import "../App.css";
 import Image from "../common/Image";
+import Chip from "@mui/material/Chip";
 
-function ProductCard({ mediaObject, instock, newArrival }) {
+function ProductCard({ mediaObject }) {
   return (
     <Box sx={{ marginBottom: "15px" }} className="product-card-container">
+      {mediaObject.newArrival && (
+        <Chip
+          label="hot"
+          sx={{
+            position: "absolute",
+            zIndex: 10,
+            marginTop: "6px",
+            marginLeft: "6px",
+            backgroundColor: "#FF0000",
+            color: "white",
+          }}
+          size="small"
+        />
+      )}
+
       <Box className="product-card">
         {mediaObject && <Image mediaObject={mediaObject} />}
       </Box>
