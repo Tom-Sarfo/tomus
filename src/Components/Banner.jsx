@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Image from "../common/Image";
 import { bannerMediaObject } from "../MediaObjects";
 import FloatingButton from "./FloatingButton";
+import HeroText from "./HeroText";
 
 function Banner() {
   return (
@@ -13,6 +14,7 @@ function Banner() {
     >
       <Image mediaObject={bannerMediaObject} />
       <FloatingButton buttonText="Shop Now"/>
+      <HeroText />
     </Box>
   );
 }

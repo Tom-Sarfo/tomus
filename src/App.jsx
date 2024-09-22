@@ -6,7 +6,6 @@ import Navbar from "./Components/Navbar";
 import ProductCard from "./Components/ProductCard";
 import LargeScreenCategory from "./Components/LargeScreenCategory";
 import useScreenWidth from "./hooks/useScreenWidth";
-import HeroText from "./Components/HeroText";
 import { productMediaObject } from "./MediaObjects";
 import { Button } from "@mui/material";
 // import ComingSoon from "./ComingSoon";
@@ -18,7 +17,7 @@ function App() {
     <>
       <Navbar />
       <Banner />
-      <HeroText />
+      {/* <HeroText /> */}
       {screenWidth > 1024 ? <LargeScreenCategory /> : <Category />}
 
       <h2

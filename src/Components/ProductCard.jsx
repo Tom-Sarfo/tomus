@@ -4,10 +4,9 @@ import "../App.css";
 import Image from "../common/Image";
 import Chip from "@mui/material/Chip";
 
-
 function ProductCard({ mediaObject }) {
   return (
-    <a href="https://tomuswear.company.site/products/" className="product-link">
+    <a href={mediaObject.itemUrl} className="product-link">
       <Box sx={{ marginBottom: "15px" }} className="product-card-container">
         {mediaObject.newArrival && (
           <Chip
