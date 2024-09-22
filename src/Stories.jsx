@@ -10,7 +10,10 @@ export const storiesArray = [
           return (
             <WithSeeMore story={story} action={action}>
               <div style={contentStyle}>
-                <img className="storyImage" src={Ayode} />
+                <img
+                  className="storyImage"
+                  src="https://res.cloudinary.com/dki2r1gnf/image/upload/t_Product-image/v1726568378/sf7eqmuj9uspigykb8fd_Square_category_avqtge_1_1_oltw20.webp"
+                />
               </div>
             </WithSeeMore>
           );
@@ -65,7 +68,7 @@ export const storiesArray = [
                     color: "#ffffff",
                   },
                 }}
-                href="https://tomuswear.company.site/products/"
+                href="https://tomuswear.company.site/products/leather-birk-slippers"
               >
                 View details
               </Button>
@@ -79,7 +82,7 @@ export const storiesArray = [
           return (
             <WithSeeMore story={story} action={action}>
               <div style={contentStyle}>
-                <img className="storyImage" src={Ayode} />
+                <img className="storyImage" src='https://res.cloudinary.com/dki2r1gnf/image/upload/v1727018035/photo_2024-09-22_15-10-47_zms232.jpg' />
               </div>
             </WithSeeMore>
           );
@@ -134,7 +137,7 @@ export const storiesArray = [
                     color: "#ffffff",
                   },
                 }}
-                href="https://tomuswear.company.site/products/"
+                href="https://tomuswear.company.site/products/leather-birk-slippers"
               >
                 View details
               </Button>
@@ -155,7 +158,7 @@ export const storiesArray = [
           return (
             <WithSeeMore story={story} action={action}>
               <div style={contentStyle}>
-                <img className="storyImage" src={Ayode} />
+                <img className="storyImage" src='https://res.cloudinary.com/dki2r1gnf/image/upload/t_Product-image/v1727018019/photo_2024-09-22_15-11-32_bgycyh.jpg' />
               </div>
             </WithSeeMore>
           );
@@ -210,7 +213,7 @@ export const storiesArray = [
                     color: "#ffffff",
                   },
                 }}
-                href="https://tomuswear.company.site/products/"
+                href="https://tomuswear.company.site/products/beads"
               >
                 View details
               </Button>
@@ -222,7 +225,7 @@ export const storiesArray = [
     ],
     categoryName: "Beads",
     storyCover:
-      "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507799781.jpg",
+      "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Product-image/v1726566689/TOMUS-46_2_xxef2z_1_wbetql.webp",
   },
   {
     story: [
@@ -286,7 +289,7 @@ export const storiesArray = [
                     color: "#ffffff",
                   },
                 }}
-                href="https://tomuswear.company.site/products/"
+                href="https://tomuswear.company.site/products/kaftan-slippers"
               >
                 View details
               </Button>
@@ -298,7 +301,7 @@ export const storiesArray = [
     ],
     categoryName: "Kaftan Slippers",
     storyCover:
-      "https://d2j6dbq0eux0bg.cloudfront.net/images/66306271/4507502323.webp",
+      "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Product-image/v1726263047/Ayode_fesxbu.jpg",
   },
 ];
 

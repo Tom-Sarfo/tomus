@@ -24,7 +24,7 @@ function LargeScreenCategory() {
         {squareCatMediaObject.map((mediaObject, index) => (
           <a
             className="product-link"
-            href="https://tomuswear.company.site/products/"
+            href={mediaObject.catUrl}
             key={index}
           >
             <SquareCategory mediaObject={mediaObject} />

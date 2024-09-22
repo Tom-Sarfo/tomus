@@ -38,6 +38,7 @@ export const squareCatMediaObject = [
     imageName: "Birks (Cork sole slippers)",
     Price: "250",
     imgDesc: "Explore birk slippers",
+    catUrl: 'https://tomuswear.company.site/products/leather-birk-slippers',
     style: {
       width: "100%",
       height: "auto",
@@ -57,6 +58,7 @@ export const squareCatMediaObject = [
     imageName: "Beads",
     Price: "300",
     imgDesc: "Explore Colorful bead slippers",
+    catUrl: 'https://tomuswear.company.site/products/beads',
     style: { width: "100%", height: "auto", borderRadius: "5px" },
   },
   {
@@ -71,6 +73,7 @@ export const squareCatMediaObject = [
     imageName: "Kaftan Slippers",
     Price: "450",
     imgDesc: "Explore pure leather Kaftan slippers",
+    catUrl: 'https://tomuswear.company.site/products/kaftan-slippers',
     style: { width: "100%", height: "auto", borderRadius: "5px" },
   },
 ];
