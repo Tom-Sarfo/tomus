@@ -76,6 +76,22 @@ export const squareCatMediaObject = [
     catUrl: "https://tomuswear.company.site/products/kaftan-slippers",
     style: { width: "100%", height: "auto", borderRadius: "5px" },
   },
+
+  {
+    mediaSet: [
+      {
+        media: "(min-width: 1024px)",
+        srcSet:
+          "https://res.cloudinary.com/dki2r1gnf/image/upload/t_square category/v1726071153/half-birk-black-main_yr5x3w.jpg",
+      },
+    ],
+    img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_square category/v1726071153/half-birk-black-main_yr5x3w.jpg",
+    imageName: "Clogs",
+    Price: "320",
+    imgDesc: "Explore pure leather Kaftan slippers",
+    catUrl: "https://tomuswear.company.site/products/clogs",
+    style: { width: "100%", height: "auto", borderRadius: "5px" },
+  },
 ];
 
 export const productMediaObject = [
@@ -142,7 +158,7 @@ export const productMediaObject = [
     imageName: "Afrikan",
     price: "620",
     imgDesc: "African crafted clogs with Nubuck suede and stainless insole",
-    itemUrl: "https://tomuswear.company.site/products/clogs-black-nubuck-suede",//not linked
+    itemUrl: "https://tomuswear.company.site/products/clogs-black-nubuck-suede", //not linked
     newArrival: true,
     inStock: true,
     style: { width: "100%" },
@@ -160,7 +176,8 @@ export const productMediaObject = [
     imageName: "Gyinaso",
     price: "270",
     imgDesc: "Easy wear birk slip on",
-    itemUrl: "https://tomuswear.company.site/products/gyinaso-black-white-combi",
+    itemUrl:
+      "https://tomuswear.company.site/products/gyinaso-black-white-combi",
     newArrival: true,
     inStock: true,
     style: { width: "100%" },

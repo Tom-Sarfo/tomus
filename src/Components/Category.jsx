@@ -23,7 +23,7 @@ function Category() {
   return (
     <Box className="circle-category">
       <p style={{ padding: "0.5rem 0.5rem 0.5rem 2rem" }}>Shop by category</p>
-      <div style={{}}>
+      <div>
         <Stack direction="row" spacing={3} sx={{ justifyContent: "center" }}>
           {storiesArray.map((story, index) => (
             <div
