@@ -59,13 +59,14 @@ function Navbar() {
           {screenWidth > 1025 && (
             <span>
               <Link
+              href="/openings"
                 sx={{
                   textDecoration: "none",
                   color: "#591a76",
                   fontWeight: "bold",
                 }}
               >
-                About us
+                Openings
               </Link>
             </span>
           )}
