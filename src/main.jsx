@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/tomus",
-    element: <ErrorPage />,
+    element: <App />,
   },
   {
     path: "/openings/",

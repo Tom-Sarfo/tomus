@@ -35,7 +35,7 @@ function Navbar() {
               paddingLeft: "0.5rem",
             }}
           >
-            <NavLink className="link" to="/tomus">
+            <NavLink className="link" to="/error">
               Tomus
             </NavLink>
           </p>
@@ -46,7 +46,7 @@ function Navbar() {
               style={{ height: "60px", width: "60px" }}
             />
           ) : (
-            <NavLink to="/tomus">
+            <NavLink to="/error">
               <LogoIcon
                 style={{
                   width: "60px",
