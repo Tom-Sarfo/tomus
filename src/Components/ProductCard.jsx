@@ -30,7 +30,7 @@ function ProductCard({ mediaObject }) {
           <p style={{ marginBlockStart: "0px", fontWeight: "bold" }}>
             {mediaObject.imageName}
           </p>
-          <p>${mediaObject.price}</p>
+          <p>₵{mediaObject.price}</p>
         </div>
       </Box>
     </a>

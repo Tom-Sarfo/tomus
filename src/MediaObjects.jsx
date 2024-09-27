@@ -139,7 +139,7 @@ export const productMediaObject = [
     ],
     img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Instagram-post/v1726071153/half-birk-black-main_yr5x3w.jpg",
     imageName: "Half-birk Suede",
-    price: "320",
+    price: "350",
     imgDesc: "Black Nubuck suede Boston birk",
     itemUrl: "https://tomuswear.company.site/products/clogs-black-nubuck-suede",
     newArrival: true,
