@@ -11,13 +11,13 @@ import CXO from "./CXO.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ErrorPage />,
+    element: <App />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/tomus",
-    element: <App />,
-  },
+  // {
+  //   path: "/tomus",
+  //   element: <App />,
+  // }, switch when on maintenance
   {
     path: "/openings/",
     element: <Careers />,

@@ -6,7 +6,7 @@ import Chip from "@mui/material/Chip";
 
 function ProductCard({ mediaObject }) {
   return (
-    <a href={mediaObject.itemUrl} className="product-link">
+    <a target="_blank" href={mediaObject.itemUrl} className="product-link">
       <Box sx={{ marginBottom: "15px" }} className="product-card-container">
         {mediaObject.newArrival && (
           <Chip

@@ -155,10 +155,10 @@ export const productMediaObject = [
       },
     ],
     img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Instagram-post/v1726263441/African-green-main1_hgx5of.jpg",
-    imageName: "Afrikan",
+    imageName: "African",
     price: "620",
     imgDesc: "African crafted clogs with Nubuck suede and stainless insole",
-    itemUrl: "https://tomuswear.company.site/products/clogs-black-nubuck-suede", //not linked
+    itemUrl: "https://tomuswear.company.site/products/african-teal",
     newArrival: true,
     inStock: true,
     style: { width: "100%" },
@@ -212,7 +212,7 @@ export const productMediaObject = [
     imageName: "African black",
     price: "620",
     imgDesc: "Boston like half shoe clogs",
-    itemUrl: "https://tomuswear.company.site/products/stik", //not linked
+    itemUrl: "https://tomuswear.company.site/products/african-black",
     newArrival: true,
     inStock: true,
     style: { width: "100%" },
@@ -247,7 +247,7 @@ export const productMediaObject = [
     imageName: "Clogs Army",
     price: "320",
     imgDesc: "Boston like clogs",
-    itemUrl: "https://tomuswear.company.site/products/eitch-slippers", //not linked
+    itemUrl: "https://tomuswear.company.site/products/clogs-army", 
     newArrival: true,
     inStock: true,
     style: { width: "100%" },
@@ -262,9 +262,9 @@ export const productMediaObject = [
     ],
     img: "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Instagram-post/v1726071122/Shegs-brown-main1_cp3px0.jpg",
     imageName: "Shegs branded",
-    price: "320",
+    price: "420",
     imgDesc: "Fear of god like clogs",
-    itemUrl: "https://tomuswear.company.site/products/eitch-slippers", //not linked
+    itemUrl: "https://tomuswear.company.site/products/shegs-branded",
     newArrival: true,
     inStock: true,
     style: { width: "100%" },

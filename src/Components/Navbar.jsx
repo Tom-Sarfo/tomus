@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import LogoIcon from "../assets/logoIcon.svg?react";
 import Stack from "@mui/material/Stack";
-import { Link } from "@mui/material";
+// import { Link } from "@mui/material";
 import "../App.css";
 import useScreenWidth from "../hooks/useScreenWidth";
 import { NavLink } from "react-router-dom";
@@ -35,7 +35,7 @@ function Navbar() {
               paddingLeft: "0.5rem",
             }}
           >
-            <NavLink className="link" to="/error">
+            <NavLink className="link" to="/">
               Tomus
             </NavLink>
           </p>
@@ -46,7 +46,7 @@ function Navbar() {
               style={{ height: "60px", width: "60px" }}
             />
           ) : (
-            <NavLink to="/error">
+            <NavLink to="/">
               <LogoIcon
                 style={{
                   width: "60px",
@@ -56,7 +56,7 @@ function Navbar() {
               />
             </NavLink>
           )}
-          {screenWidth > 1025 && (
+          {/* {screenWidth > 1025 && (
             <span>
               <Link
               href="/openings"
@@ -69,7 +69,7 @@ function Navbar() {
                 Openings
               </Link>
             </span>
-          )}
+          )} */}
         </Stack>
       </Box>
     </nav>
