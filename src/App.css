@@ -85,10 +85,16 @@
 }
  
 
-/* .circle-category{
- max-width: 320px;
- overflow-x: scroll;
-} */
+/* .circle-category{ */
+ /* max-width: 320px; */
+ /* overflow-x: scroll; */
+/* } */
+
+.circle-category {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-x: scroll;
+}
 
 
 @media (max-width: 1300px) {
@@ -196,6 +202,7 @@
   display: block;
   max-width: 100%;
   border-radius: 4;
+  margin-top: 5rem;
 }
 
 @media (min-width: 640px) {

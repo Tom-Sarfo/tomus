@@ -5,10 +5,12 @@ import Stories from "react-insta-stories";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import { storiesArray } from "../Stories";
+import useScreenWidth from "./../hooks/useScreenWidth";
 
 function Category() {
   const [open, setOpen] = useState(false);
   const [storyIndex, setStoryIndex] = useState(null);
+  const screenWidth = useScreenWidth();
 
   const handleStoryClick = (newOpen, index) => {
     setStoryIndex(index);
@@ -21,16 +23,30 @@ function Category() {
   );
 
   return (
-    <Box className="circle-category">
-      <p style={{ padding: "0.5rem 0.5rem 0.5rem 2rem" }}>Shop by category</p>
-      <div>
-        <Stack direction="row" spacing={3} sx={{ justifyContent: "center" }}>
+    <Box>
+      <p style={{ padding: "0.5rem 0.5rem 0.5rem 2rem", textAlign: "center" }}>
+        Testimonials and Reviews
+      </p>
+      <div className="circle-category">
+        <Stack
+          direction="row"
+          spacing={screenWidth < 420 ? 1 : 3}
+          sx={{
+            justifyContent: "flex-start",
+            width: "100%",
+            scrollBehavior: "smooth",
+            alignItems: "center",
+          }}
+          // className="circle-category"
+        >
           {storiesArray.map((story, index) => (
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                alignItems: screenWidth < 700 ? "right" : "center",
+                width: screenWidth < 420 ? "300px" : "100%", //work on this one here
+                padding: screenWidth < 420 ? "2rem" : "",
               }}
               key={index}
             >
@@ -49,7 +65,7 @@ function Category() {
                   }}
                 />
               </div>
-              <p>{story.categoryName}</p>
+              <p style={{ textAlign: "center", width: '100%' }}>{story.categoryName}</p>
             </div>
           ))}
         </Stack>
@@ -62,7 +78,7 @@ function Category() {
       >
         <Stories
           stories={filteredStories.flat()}
-          defaultInterval={3000}
+          defaultInterval={5000}
           width={"100%"}
           height="100vh"
           onAllStoriesEnd={() => setOpen(false)}
