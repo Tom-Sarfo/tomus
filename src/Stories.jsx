@@ -19,7 +19,7 @@ export const storiesArray = [
             <WithSeeMore story={story} action={action}>
               <div style={contentStyle}>
                 <div className="storyImage">
-                  <video width="100%" height="640" autoPlay loop>
+                  <video width="320" height="640" autoPlay loop>
                     <source
                       src="https://res.cloudinary.com/dki2r1gnf/video/upload/v1730039273/IMG_1004_z5tiec.mp4"
                       type="video/mp4"
@@ -85,7 +85,7 @@ export const storiesArray = [
             <WithSeeMore story={story} action={action}>
               <div style={contentStyle}>
                 <div className="storyImage">
-                  <video width="100%" height="640" autoPlay loop>
+                  <video width="320" height="640" autoPlay loop>
                     <source
                       src="https://res.cloudinary.com/dki2r1gnf/video/upload/v1730042359/Snapinsta.app_video_77420AC7BD161C299618E3C08026C695_video_dashinit_uaxjvh.mp4"
                       type="video/mp4"
