@@ -140,7 +140,7 @@ export const storiesArray = [
         duration: 10000,
       },
     ],
-    categoryName: "Edward Asare",
+    categoryName: "Edward A.",
     storyCover:
       "https://res.cloudinary.com/dki2r1gnf/image/upload/v1730045281/Screenshot_from_2024-10-27_16-07-26_sp5wec.png",
   },
