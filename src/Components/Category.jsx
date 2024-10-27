@@ -36,6 +36,7 @@ function Category() {
             width: "100%",
             scrollBehavior: "smooth",
             alignItems: "center",
+            padding: screenWidth < 420 ? "" : "1rem",
           }}
           // className="circle-category"
         >
@@ -46,7 +47,7 @@ function Category() {
                 flexDirection: "column",
                 alignItems: screenWidth < 700 ? "right" : "center",
                 width: screenWidth < 420 ? "300px" : "100%", //work on this one here
-                padding: screenWidth < 420 ? "2rem" : "",
+                padding: screenWidth < 420 ? "1rem" : "",
               }}
               key={index}
             >
@@ -65,7 +66,9 @@ function Category() {
                   }}
                 />
               </div>
-              <p style={{ textAlign: "center", width: '100%' }}>{story.categoryName}</p>
+              <p style={{ textAlign: "center", width: "100%" }}>
+                {story.categoryName}
+              </p>
             </div>
           ))}
         </Stack>

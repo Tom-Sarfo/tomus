@@ -8,12 +8,12 @@ export const bannerMediaObject = {
     {
       media: "(max-width: 430px)",
       srcSet:
-        "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Mobile-header-image/v1726061945/African-black-landscape-banner_ivpzvs.jpg 430w",
+        "https://res.cloudinary.com/dki2r1gnf/image/upload/v1727064694/photo_2024-09-23_04-10-15_sjhcaf.jpg 430w",
     },
     {
       media: "(max-width: 640px)",
       srcSet:
-        "https://res.cloudinary.com/dki2r1gnf/image/upload/t_Mobile-header-image/v1726061945/African-black-landscape-banner_ivpzvs.jpg 640w",
+        "https://res.cloudinary.com/dki2r1gnf/image/upload/v1727064830/photo_2024-09-23_04-08-40_menfj8.jpg 640w",
     },
     {
       media: "(max-width: 1024px)",
