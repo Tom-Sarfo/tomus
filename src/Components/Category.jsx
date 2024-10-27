@@ -81,7 +81,7 @@ function Category() {
       >
         <Stories
           stories={filteredStories.flat()}
-          defaultInterval={5000}
+          // defaultInterval={5000}
           width={"100%"}
           height="100vh"
           onAllStoriesEnd={() => setOpen(false)}
