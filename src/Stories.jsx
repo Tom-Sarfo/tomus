@@ -10,6 +10,13 @@ const cardText1 =
 const cardText2 =
   "Bro I love birks. I used to buy birks a lot but then I often get issues with it. within some few days and the foundation is already gone. Charley your birk be top notch!";
 
+const cardText3 =
+  "Hi Tomus birk, good evening I just received my Birks, and I’m thrilled! The online buying process was seamless, and the birk fit perfectly. Thank you for such a great experience!🫶🏽";
+
+const cardText4 =
+  "The authenticity when I wear is what people see and drive them to ask me to order some for them. So obviously means your product is super good. I wear it anywhere";
+
+
 export const storiesArray = [
   {
     story: [
@@ -67,6 +74,9 @@ export const storiesArray = [
                   src="https://res.cloudinary.com/dki2r1gnf/image/upload/v1729741164/ad89e077-925a-4b8c-91a8-172329704571_pgpuo3.jpg"
                 />
               </div>
+              <Typography color="#000" sx={{ marginTop: "1rem" }}>
+                Phil Boakye
+              </Typography>
             </WithSeeMore>
           );
         },
@@ -133,6 +143,9 @@ export const storiesArray = [
                   className="storyImage"
                   src="https://res.cloudinary.com/dki2r1gnf/image/upload/v1730045885/photo_2024-10-27_16-17-49_lkpukf.jpg"
                 />
+                <Typography color="#000" sx={{ marginTop: "1rem" }}>
+                  Edward Asare
+                </Typography>
               </div>
             </WithSeeMore>
           );
@@ -143,6 +156,80 @@ export const storiesArray = [
     categoryName: "Edward A.",
     storyCover:
       "https://res.cloudinary.com/dki2r1gnf/image/upload/v1730045281/Screenshot_from_2024-10-27_16-07-26_sp5wec.png",
+  },
+  {
+    story: [
+      {
+        content: ({ action, story }) => {
+          return (
+            <WithSeeMore story={story} action={action}>
+              <div style={contentStyle}>
+                <TestimonialCard imgName="Sydney" cardText={cardText3} />
+              </div>
+            </WithSeeMore>
+          );
+        },
+        duration: 10000,
+      },
+      {
+        content: ({ action, story }) => {
+          return (
+            <WithSeeMore story={story} action={action}>
+              <div style={contentStyle}>
+                <img
+                  className="storyImage"
+                  src="https://res.cloudinary.com/dki2r1gnf/image/upload/v1730263924/photo_2024-10-30_04-49-50_fma0jv.jpg"
+                />
+                <Typography color="#000" sx={{ marginTop: "1rem" }}>
+                  Sydney
+                </Typography>
+              </div>
+            </WithSeeMore>
+          );
+        },
+        duration: 10000,
+      },
+    ],
+    categoryName: "Sydney",
+    storyCover:
+      "https://res.cloudinary.com/dki2r1gnf/image/upload/v1730263924/photo_2024-10-30_04-49-50_fma0jv.jpg",
+  },
+  {
+    story: [
+      {
+        content: ({ action, story }) => {
+          return (
+            <WithSeeMore story={story} action={action}>
+              <div style={contentStyle}>
+                <TestimonialCard imgName="King Mane" cardText={cardText4} />
+              </div>
+            </WithSeeMore>
+          );
+        },
+        duration: 10000,
+      },
+      {
+        content: ({ action, story }) => {
+          return (
+            <WithSeeMore story={story} action={action}>
+              <div style={contentStyle}>
+                <img
+                  className="storyImage"
+                  src="https://res.cloudinary.com/dki2r1gnf/image/upload/v1730264713/photo_2024-10-30_05-03-58_jb1oo6.jpg"
+                />
+                <Typography color="#000" sx={{ marginTop: "1rem" }}>
+                  King Mane
+                </Typography>
+              </div>
+            </WithSeeMore>
+          );
+        },
+        duration: 10000,
+      },
+    ],
+    categoryName: "King Mane",
+    storyCover:
+      "https://res.cloudinary.com/dki2r1gnf/image/upload/v1730264713/photo_2024-10-30_05-03-58_jb1oo6.jpg",
   },
 ];
 
